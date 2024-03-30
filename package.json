@@ -1,0 +1,37 @@
+{
+    "name":                        "@rse/closingcredits",
+    "publishConfig":               { "access": "public" },
+    "version":                     "0.9.0",
+    "description":                 "Closing Credits for OBS Studio or vMix",
+    "browser":                     "index.html",
+    "keywords":                    [ "closing", "end", "final", "credits", "obs", "studio", "vmix" ],
+    "repository": {
+        "type":                    "git",
+        "url":                     "git+https://github.com/rse/closingcredits.git"
+    },
+    "author": {
+        "name":                    "Dr. Ralf S. Engelschall",
+        "email":                   "rse@engelschall.com",
+        "url":                     "http://engelschall.com"
+    },
+    "license":                     "MIT",
+    "homepage":                    "https://github.com/rse/closingcredits",
+    "bugs":                        "https://github.com/rse/closingcredits/issues",
+    "dependencies": {
+        "jquery":                  "3.7.1",
+        "axios":                   "1.6.8",
+        "animejs":                 "3.2.2",
+        "mousetrap":               "1.6.5",
+        "typopro-web":             "4.2.6",
+        "howler":                  "2.2.4",
+        "@rse/soundlp":            "1.1.1"
+    },
+    "optionalDependencies": {
+        "huds":                    "2.1.4",
+        "zx":                      "7.2.3"
+    },
+    "scripts": {
+        "start":                   "huds -a 0.0.0.0 -p 9999 -d closingcredits:index-huds.html,index-huds.yaml",
+        "prepublishOnly":          "npx zx package.mjs"
+    }
+}

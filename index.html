@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+**
+**  ClosingCredits ~ Closing Credits for OBS Studio or vMix
+**  Copyright (c) 2024 Dr. Ralf S. Engelschall <rse@engelschall.com>
+**
+**  Permission is hereby granted, free of charge, to any person obtaining
+**  a copy of this software and associated documentation files (the
+**  "Software"), to deal in the Software without restriction, including
+**  without limitation the rights to use, copy, modify, merge, publish,
+**  distribute, sublicense, and/or sell copies of the Software, and to
+**  permit persons to whom the Software is furnished to do so, subject to
+**  the following conditions:
+**
+**  The above copyright notice and this permission notice shall be included
+**  in all copies or substantial portions of the Software.
+**
+**  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+**  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+**  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+**  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+**  CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+**  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+**  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+**
+-->
+<html>
+    <head>
+        <title>ClosingCredits</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/gif" href="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw">
+
+        <link type="text/css" rel="stylesheet" href="node_modules/typopro-web/web/TypoPRO-SourceSansPro/TypoPRO-SourceSansPro.css">
+
+        <script type="text/javascript">var module = {}</script>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="node_modules/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="node_modules/animejs/lib/anime.min.js"></script>
+        <script type="text/javascript" src="node_modules/mousetrap/mousetrap.min.js"></script>
+        <script type="text/javascript" src="node_modules/howler/dist/howler.min.js"></script>
+        <script type="text/javascript" src="node_modules/@rse/soundlp/soundlp.browser.js"></script>
+
+        <script type="text/javascript" src="closingcredits.js"></script>
+        <link type="text/css" rel="stylesheet" href="closingcredits.css"/>
+
+        <script type="text/javascript">
+            /*  render a single instance of the clock  */
+            $(document).ready(() => {
+                /*  initialize sound loops  */
+                const slp = new SoundLP({ basedir: "node_modules/@rse/soundlp" })
+                soundlp = new Howl({ ...slp.config(), volume: 0.30, preload: true })
+
+                /*  determine properties  */
+                const props = {}
+                const params = (new URL(document.location)).searchParams
+                for (let [ key, val ] of params) {
+                    if (typeof val === "string") {
+                        if (val === "")
+                            val = true
+                        else if (val.match(/^(?:true|false)$/))
+                            val = (val === "true")
+                        else if (val.match(/^\d+$/))
+                            val = parseInt(val)
+                        else if (val.match(/^\d+\.\d+$/))
+                            val = parseFloat(val)
+                    }
+                    props[key] = val
+                }
+
+                /*  initialize and closing credits  */
+                const cc = new ClosingCredits(props)
+                cc.start(props)
+
+                /*  provide restart keystroke  */
+                Mousetrap.bind("r", () => { cc.restart() })
+            })
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
