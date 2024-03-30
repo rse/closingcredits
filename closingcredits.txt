@@ -2,7 +2,9 @@
 Event
 -----
 
-Digital Townhall 2024.2
+msg group
+Digital Townhall
+2024-01-01
 
 Presenters
 ----------
@@ -39,8 +41,8 @@ Translation Crew
 FIXME                        | Translator
 FIXME                        | Translator
 
-Shooting Location
------------------
+Event Location
+--------------
 
 msg Filmstudio               | Location
 msg Research                 | Contact
@@ -82,14 +84,16 @@ Major Hardware Vendors (Stage)
 ------------------------------
 
 Sennheiser                   | Wireless Audio
-Panasonic                    | PTZ Cameras
-Birddog P400                 | PTZ Cameras, Video Conversion
 PTZOptics                    | PTZ Camera Controller
+Panasonic                    | PTZ Cameras
+Birddog                      | PTZ Cameras
+Birddog                      | Video Conversion
 Logitech                     | SPY Cameras
 Samsung                      | Televisions
 GlobalTruss                  | Studio Truss
 Manfrotto                    | Studio Truss
 Swit                         | Studio Lights
+GVM                          | Studio Lights
 
 Major Hardware Vendors (Control)
 --------------------------------
@@ -102,6 +106,14 @@ Dell                         | Monitors
 Synology                     | Storage
 Netgear                      | Ethernet Switches
 AVM                          | Internet Router
+
+Privacy & Confidentiality
+-------------------------
+
+All persons shown in this event gave their explicit
+consent to be recorded and live broadcasted.
+All content shown in this event is intended to be
+shared within employees of the msg group only.
 
 Copyright
 ---------
