@@ -26,12 +26,18 @@
         "howler":                  "2.2.4",
         "@rse/soundlp":            "1.1.1"
     },
+    "devDependencies": {
+        "eslint":                  "8.57.0",
+        "eslint-config-standard":  "17.1.0",
+        "eslint-plugin-import":    "2.29.1"
+    },
     "optionalDependencies": {
         "huds":                    "2.1.4",
         "zx":                      "7.2.3"
     },
     "scripts": {
         "start":                   "huds -a 0.0.0.0 -p 9999 -d closingcredits:index-huds.html,index-huds.yaml",
+        "lint":                    "eslint --config eslint.yaml *.js",
         "prepublishOnly":          "npx zx package.mjs"
     }
 }
