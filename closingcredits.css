@@ -39,6 +39,7 @@ body {
     position: relative;
     overflow: hidden;
     opacity: 0;
+    user-select: none;
 }
 
 .closingcredits .canvas {
