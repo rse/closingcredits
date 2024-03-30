@@ -23,7 +23,6 @@
 ##
 
 closingcredits:
-    canvasOpacity:         "0.9"
     canvasColor:           "#000000c0"
     headerColor:           "#999999"
     headerFontSize:        "40px"

@@ -72,9 +72,6 @@ Local Use
 Options
 -------
 
-- **speed**=*number*
-- **opacity**=*number*
-- **canvasColor**=*color*
 - **canvasColor**=*color*
 - **headerColor**=*color*
 - **headerFontSize**=*size*
@@ -82,12 +79,15 @@ Options
 - **textColor**=*color*
 - **textFontSize**=*size*
 - **textFontWeight**=*weight*
-- **nameColor**=*color*
-- **nameFontSize**=*size*
-- **nameFontWeight**=*weight*
-- **roleColor**=*color*
-- **roleFontSize**=*size*
-- **roleFontWeight**=*weight*
+- **leftColor**=*color*
+- **leftFontSize**=*size*
+- **leftFontWeight**=*weight*
+- **rightColor**=*color*
+- **rightFontSize**=*size*
+- **rightFontWeight**=*weight*
+- **soundLoop**=*id*
+- **pageScrollDuration**=*ms*
+- **pageTextURL**=*url*
 
 Control
 -------
