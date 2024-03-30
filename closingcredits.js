@@ -133,27 +133,18 @@ class ClosingCredits {
         }).finished
 
         /*  scroll text  */
-        const vh = $(el).height()
         const ch = $(".canvas", el).height()
+        const vh = $(el).height()
         const vd = parseInt(this.props.pageScrollDuration)
-        for (let offset = vh; offset > -ch; offset -= vh) {
-            /*  determine scroll chunk range and scroll chunk duration  */
-            const offsetEnd = Math.max(offset - vh, -ch)
-            let duration = vd
-            if (offsetEnd - offset > -ch)
-                duration = vd / vh * Math.abs(offsetEnd - offset)
-
-            /*  scroll the text one chunk  */
-            await anime({
-                targets:   $(".canvas", el).get(0),
-                duration:  duration,
-                autoplay:  true,
-                direction: "normal",
-                easing:    "linear",
-                delay:     0,
-                top:       [ offset, offsetEnd ]
-            }).finished
-        }
+        await anime({
+            targets:   $(".canvas", el).get(0),
+            duration:  duration = vd / vh * Math.abs(-ch - vh),
+            autoplay:  true,
+            direction: "normal",
+            easing:    "linear",
+            delay:     0,
+            top:       [ vh, -ch ]
+        }).finished
 
         /*  fade-out canvas (background and scroll area)  */
         anime({
