@@ -28,7 +28,7 @@ window.ClosingCredits = class ClosingCredits {
         /*  take over properties  */
         this.props = {
             canvasColor:        "#000000c0",
-            headerColor:        "#999999",
+            headerColor:        "#aaaaaa",
             headerFontSize:     "40px",
             headerFontWeight:   "200",
             textColor:          "#ffffff",
@@ -37,7 +37,7 @@ window.ClosingCredits = class ClosingCredits {
             leftColor:          "#ffffff",
             leftFontSize:       "40px",
             leftFontWeight:     "500",
-            rightColor:         "#cccccc",
+            rightColor:         "#dddddd",
             rightFontSize:      "40px",
             rightFontWeight:    "300",
             soundLoop:          "orchester1",

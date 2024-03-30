@@ -24,7 +24,7 @@
 
 closingcredits:
     canvasColor:           "#000000c0"
-    headerColor:           "#999999"
+    headerColor:           "#aaaaaa"
     headerFontSize:        "40px"
     headerFontWeight:      "200"
     textColor:             "#ffffff"
@@ -33,7 +33,7 @@ closingcredits:
     leftColor:             "#ffffff"
     leftFontSize:          "40px"
     leftFontWeight:        "600"
-    rightColor:            "#cccccc"
+    rightColor:            "#dddddd"
     rightFontSize:         "40px"
     rightFontWeight:       "300"
     soundLoop:             "orchester1"
