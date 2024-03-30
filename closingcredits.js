@@ -47,60 +47,61 @@ class ClosingCredits {
         }
     }
     async start () {
-        /*  initialize internal state  */
-        this.started    = null
-        this.show       = false
-        this.ended      = false
-        this.soundid    = null
-
         /*  create DOM fragment  */
-        this.el = $(`
+        const el = $(`
             <div class="closingcredits">
                 <div class="canvas">
                 </div>
             </div>
         `)
-        $(this.el)
+        $(el)
             .css("background-color", this.props.canvasColor)
 
         /*  inject DOM fragment into DOM tree  */
-        $("body").append(this.el)
+        $("body").append(el)
 
         /*  load and parse text  */
         let text = (await axios.get(this.props.pageTextURL))?.data ?? ""
         text = text.replace(/\(c\)/g, "&copy;")
         text.replace(/(^|[^\r\n]+)\r?\n-+\r?\n\s*\r?\n((?:[^\r\n]+\r?\n)+)(?=\s*\r?\n|$)/g, (_, h, b) => {
-            $(".canvas", this.el).append(
+            /*  create header  */
+            $(".canvas", el).append(
                 $(`<div class="header">${h}</div>`)
                     .css("color", this.props.headerColor)
                     .css("font-size", this.props.headerFontSize)
                     .css("font-weight", this.props.headerFontWeight))
+
+            /*  split body into individial lines  */
             const lines = b.split(/\r?\n/)
             for (const line of lines) {
                 const m = line.match(/^(.+?)\s*\|\s*(.+?)\s*$/)
-                let el
+                let child
                 if (m !== null) {
+                    /*  render left/right columns  */
                     const [ , left, right ] = m
-                    el = $(`<div class="columns">
-                        <div class="left">${left}</div>
-                        <div class="right">${right}</div>
-                    </div>`)
-                    $(".left", el)
-                        .css("color", this.props.leftColor)
-                        .css("font-size", this.props.leftFontSize)
+                    child = $(`
+                        <div class="columns">
+                            <div class="left">${left}</div>
+                            <div class="right">${right}</div>
+                        </div>
+                    `)
+                    $(".left", child)
+                        .css("color",       this.props.leftColor)
+                        .css("font-size",   this.props.leftFontSize)
                         .css("font-weight", this.props.leftFontWeight)
-                    $(".right", el)
-                        .css("color", this.props.rightColor)
-                        .css("font-size", this.props.rightFontSize)
+                    $(".right", child)
+                        .css("color",       this.props.rightColor)
+                        .css("font-size",   this.props.rightFontSize)
                         .css("font-weight", this.props.rightFontWeight)
                 }
                 else {
-                    el = $(`<div class="text">${line}</div>`)
+                    /*  render single text column  */
+                    child = $(`<div class="text">${line}</div>`)
                         .css("color", this.props.textColor)
                         .css("font-size", this.props.textFontSize)
                         .css("font-weight", this.props.textFontWeight)
                 }
-                $(".canvas", this.el).append(el)
+                $(".canvas", el).append(child)
             }
         })
 
@@ -111,9 +112,9 @@ class ClosingCredits {
             soundlp.fade(0, 1, 2000, soundid)
         }
 
-        /*  fade-in canvas  */
+        /*  fade-in canvas (background and scroll area)  */
         anime({
-            targets:   $(this.el).get(0),
+            targets:   $(el).get(0),
             duration:  3000,
             autoplay:  true,
             direction: "normal",
@@ -122,7 +123,7 @@ class ClosingCredits {
             opacity:   [ 0.0, 1.0 ]
         }).finished,
         anime({
-            targets:   $(".canvas", this.el).get(0),
+            targets:   $(".canvas", el).get(0),
             duration:  3000,
             autoplay:  true,
             direction: "normal",
@@ -132,12 +133,12 @@ class ClosingCredits {
         }).finished
 
         /*  scroll text  */
-        const vh = $(this.el).height()
-        const ch = $(".canvas", this.el).height()
+        const vh = $(el).height()
+        const ch = $(".canvas", el).height()
         const vd = parseInt(this.props.pageScrollDuration)
         for (let offset = vh; offset > -ch; offset -= vh) {
             await anime({
-                targets:   $(".canvas", this.el).get(0),
+                targets:   $(".canvas", el).get(0),
                 duration:  vd,
                 autoplay:  true,
                 direction: "normal",
