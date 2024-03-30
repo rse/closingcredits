@@ -76,16 +76,22 @@ Engelschall HUDS             | Head-Up-Display Rendering
 Major Hardware Components
 -------------------------
 
+Sennheiser EW 500 G4         | Wireless Audio
 PTZOptics Superjoy           | PTZ Camera Controller
+Panasonic AW-UE100           | PTZ Cameras
 Birddog P400                 | PTZ Cameras
 Birddog 4K Flex              | Video Conversion
-Panasonic AW-UE100           | PTZ Cameras
 Samsung TV                   | Televisions
 Dell Monitor                 | Monitors
 One.de Gaming                | Personal Computers
+Elgato StreamDeck XL         | Production Control
 Logitech BRIO 4K             | SPY Cameras
 Logitech MX                  | Keyboards, Mice
 Netgear AV-Line              | Ethernet Switches
+AVM Fritz!box                | Internet Router
+GlobalTruss                  | Studio Truss
+Manfrotto 035 Super Clamp    | Studio Truss
+Swit PL-E90D                 | Studio Lights
 
 Copyright
 ---------
