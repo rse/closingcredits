@@ -42,7 +42,7 @@ window.ClosingCredits = class ClosingCredits {
             rightFontWeight:    "300",
             soundLoop:          "orchester1",
             pageScrollDuration: "10000",
-            pageTextURL:        "sample.txt",
+            pageTextURL:        "closingcredits.txt",
             ...props
         }
     }
