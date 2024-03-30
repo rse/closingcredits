@@ -41,7 +41,7 @@ class ClosingCredits {
             rightFontSize:      "40px",
             rightFontWeight:    "300",
             soundLoop:          "orchester1",
-            pageScrollDuration: "8000",
+            pageScrollDuration: "10000",
             pageTextURL:        "sample.txt",
             ...props
         }

@@ -50,23 +50,26 @@ Robert-Bürkle-Str. 1, 85737 Ismaning
 Major Cloud Services
 --------------------
 
-U2D Ventari                  | Event Management, Playout
+U2D Ventari                  | Event Management, Stream Playout
 3Q SDN                       | Streaming Distribution Network
 
 Major Software Components
 -------------------------
 
-vMix                         | Video Mixing
-vMix VPTZ                    | Camera Control
-Cantabile                    | Audio Mixing
+StudioCoast vMix             | Video Mixing
+NewTek NDI Tools             | Video Transmission
+Topten Software Cantabile    | Audio Mixing
 Waves Plugins                | Audio Filtering
-Studio-Canvas                | Background Canvas Rendering
-NDI Tools                    | Video Transmission
-HUDS & HUD Studio            | Head-Up-Display Rendering
 VoiceMeeter                  | Audio Distribution
-TouchOSC                     | REST-to-MIDI Converter
+Bitfocus Companion           | Production Control
+TouchOSC                     | Production Control
+VDO.Ninja                    | Guest Ingesting
 QPrompt                      | Teleprompter Rendering
-VDO.Ninja                    | WebRTC Video Conferencing
+Engelschall vMix-VPTZ        | Camera Control
+Engelschall Studio-Canvas    | Canvas Rendering
+Engelschall ClosingCredits   | Closing Credits Rendering
+Engelschall LiveCut          | Live Replay Snippet Rendering
+Engelschall HUDS             | Head-Up-Display Rendering
 
 Major Hardware Components
 -------------------------
@@ -74,14 +77,13 @@ Major Hardware Components
 PTZOptics Superjoy           | PTZ Camera Controller
 Birddog P400                 | PTZ Cameras
 Panasonic AW-UE100           | PTZ Cameras
-Logitech                     | Spy Cameras
+Logitech BRIO 4K             | SPY Cameras
 Samsung                      | Televisions
 Dell                         | Monitors
-Birddog 4K Flex In           | HDMI-to-NDI Ingress
-Birddog 4K Flex Out          | NDI-to-HDMI Egress
+Birddog 4K Flex              | Video Conversion
 One.de Gaming                | Personal Computers
-Logitech                     | Keyboards, Mice
-Netgear                      | Ethernet Switches
+Logitech MX                  | Keyboards, Mice
+Netgear AV-Line              | Ethernet Switches
 
 Copyright
 ---------
