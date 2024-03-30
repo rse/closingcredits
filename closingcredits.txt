@@ -1,12 +1,12 @@
 
-Event
+EVENT
 -----
 
 msg group
 Digital Townhall
 2024-01-01
 
-Presenters
+PRESENTERS
 ----------
 
 FIXME                        | Vorstandsvorsitzender
@@ -14,7 +14,7 @@ FIXME                        | Mitglied des Vorstands
 FIXME                        | FIXME
 FIXME                        | FIXME
 
-Studio Crew
+STUDIO CREW
 -----------
 
 Dr. Ralf S. Engelschall      | Supervisor
@@ -24,7 +24,7 @@ Maximilian Marsch            | Prompter
 Matthias Brusdeylins         | Observer
 Kristina Sunjerga            | Equipper
 
-Event Crew
+EVENT CREW
 ----------
 
 FIXME                        | Producer
@@ -35,13 +35,13 @@ FIXME                        | Chat Officer
 FIXME                        | Mailbox Officer
 FIXME                        | Mailbox Officer
 
-Translation Crew
+TRANSLATION CREW
 ----------------
 
 FIXME                        | Translator
 FIXME                        | Translator
 
-Event Location
+EVENT LOCATION
 --------------
 
 msg Filmstudio               | Location
@@ -51,14 +51,14 @@ Robert-Bürkle-Str. 1         | Street
 85737 Ismaning               | City
 GERMANY                      | Country
 
-Major Cloud Services
+MAJOR CLOUD SERVICES
 --------------------
 
 U2D Ventari                  | Event Management
 3Q SDN                       | Video Egress Service
 VDO.Ninja                    | Video Ingress Service
 
-Major Software Products (Commercial)
+MAJOR SOFTWARE PRODUCTS (Commercial)
 ------------------------------------
 
 StudioCoast vMix             | Video Mixing
@@ -69,7 +69,7 @@ VB-Audio VoiceMeeter         | Audio Mixing
 Waves Plugin Suite           | Audio Filtering
 Hexler TouchOSC              | Production Control
 
-Major Software Products (Open Source)
+MAJOR SOFTWARE PRODUCTS (Open Source)
 -------------------------------------
 
 Bitfocus Companion           | Production Control
@@ -80,7 +80,7 @@ Engelschall ClosingCredits   | Closing Credits Rendering
 Engelschall LiveCut          | Live Replay Snippet Rendering
 Engelschall HUDS             | Head-Up-Display Rendering
 
-Major Hardware Vendors (Stage)
+MAJOR HARDWARE VENDORS (Stage)
 ------------------------------
 
 Sennheiser                   | Wireless Audio
@@ -95,7 +95,7 @@ Manfrotto                    | Studio Truss
 Swit                         | Studio Lights
 GVM                          | Studio Lights
 
-Major Hardware Vendors (Control)
+MAJOR HARDWARE VENDORS (Control)
 --------------------------------
 
 Blackmagic Design            | Video Conversion
@@ -107,7 +107,7 @@ Synology                     | Storage
 Netgear                      | Ethernet Switches
 AVM                          | Internet Router
 
-Privacy & Confidentiality
+PRIVACY & CONFIDENTIALITY
 -------------------------
 
 All persons shown in this event gave their explicit
@@ -115,7 +115,7 @@ consent to be recorded and live broadcasted.
 All content shown in this event is intended to be
 shared within employees of the msg group only.
 
-Copyright
+COPYRIGHT
 ---------
 
 Copyright (c) 2024 msg systems ag
