@@ -138,7 +138,7 @@ class ClosingCredits {
         const vd = parseInt(this.props.pageScrollDuration)
         await anime({
             targets:   $(".canvas", el).get(0),
-            duration:  duration = vd / vh * Math.abs(-ch - vh),
+            duration:  vd / vh * Math.abs(-ch - vh),
             autoplay:  true,
             direction: "normal",
             easing:    "linear",
