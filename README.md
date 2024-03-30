@@ -9,14 +9,14 @@ Abstract
 
 **ClosingCredits** is a HTML/CSS/JS Browser Source layer for [OBS
 Studio](http://obsproject.com/) or [vMix](https://www.vmix.com/) for
-displaying a classical closing credits. This is usually placed over
+displaying classical closing credits. This is usually placed over
 the video stream at the end of an event.
 
 Demo
 ----
 
-A centrally deployed version of **ClosingCredit** is available under
-the URL https://rse.github.io/closing-credit/.
+A centrally deployed version of **ClosingCredits** is available under
+the URL https://rse.github.io/closingcredits/.
 
 Remote Use
 ----------
