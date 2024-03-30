@@ -7,11 +7,11 @@ Digital Townhall 2024.2
 Presenters
 ----------
 
-Dr. Jürgen Zehetmaier        | Vorstandsvorsitzender
-Dr. Frank Schlottmann        | Mitglied des Vorstands
+FIXME                        | Vorstandsvorsitzender
+FIXME                        | Mitglied des Vorstands
 Dr. Ralf S. Engelschall      | CTO msg group
-Mark Schmidt                 | msg Artificial Intelligence
-Christian Mayer              | msg Artificial Intelligence
+FIXME                        | msg Artificial Intelligence
+FIXME                        | msg Artificial Intelligence
 
 Studio Crew
 -----------
