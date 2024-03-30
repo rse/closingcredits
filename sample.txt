@@ -43,9 +43,11 @@ FIXME                        | Translator
 Shooting Location
 -----------------
 
-msg Filmstudio
-msg Research, msg systems ag
-Robert-Bürkle-Str. 1, 85737 Ismaning
+msg Filmstudio               | Location Name
+msg Research                 | Contact Unit Name
+msg systems ag               | Company Name
+Robert-Bürkle-Str. 1         | Street Address
+85737 Ismaning               | City Name
 
 Major Cloud Services
 --------------------
@@ -59,12 +61,12 @@ Major Software Components
 StudioCoast vMix             | Video Mixing
 NewTek NDI Tools             | Video Transmission
 Topten Software Cantabile    | Audio Mixing
-Waves Plugins                | Audio Filtering
-VoiceMeeter                  | Audio Distribution
+Waves Plugin Suite           | Audio Filtering
+VB-Audio VoiceMeeter         | Audio Distribution
 Bitfocus Companion           | Production Control
-TouchOSC                     | Production Control
-VDO.Ninja                    | Guest Ingesting
-QPrompt                      | Teleprompter Rendering
+Hexler TouchOSC              | Production Control
+Seguin VDO.Ninja             | Guest Ingesting
+Pérez QPrompt                | Teleprompter Rendering
 Engelschall vMix-VPTZ        | Camera Control
 Engelschall Studio-Canvas    | Canvas Rendering
 Engelschall ClosingCredits   | Closing Credits Rendering
@@ -76,12 +78,12 @@ Major Hardware Components
 
 PTZOptics Superjoy           | PTZ Camera Controller
 Birddog P400                 | PTZ Cameras
-Panasonic AW-UE100           | PTZ Cameras
-Logitech BRIO 4K             | SPY Cameras
-Samsung                      | Televisions
-Dell                         | Monitors
 Birddog 4K Flex              | Video Conversion
+Panasonic AW-UE100           | PTZ Cameras
+Samsung TV                   | Televisions
+Dell Monitor                 | Monitors
 One.de Gaming                | Personal Computers
+Logitech BRIO 4K             | SPY Cameras
 Logitech MX                  | Keyboards, Mice
 Netgear AV-Line              | Ethernet Switches
 
