@@ -62,7 +62,11 @@ window.ClosingCredits = class ClosingCredits {
 
         /*  load and parse text  */
         let text = (await axios.get(this.props.pageTextURL))?.data ?? ""
-        text = text.replace(/\(c\)/g, "&copy;")
+        text = text
+            .replace(/\&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/\(c\)/g, "&copy;")
         text.replace(/(^|[^\r\n]+)\r?\n-+\r?\n\s*\r?\n((?:[^\r\n]+\r?\n)+)(?=\s*\r?\n|$)/g, (_, h, b) => {
             /*  create header  */
             $(".canvas", el).append(
