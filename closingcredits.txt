@@ -67,6 +67,7 @@ NewTek NDI Tools             | Video Transmission
 Topten Software Cantabile    | Audio Mixing
 VB-Audio VoiceMeeter         | Audio Mixing
 Waves Plugin Suite           | Audio Filtering
+BlueCat Plugin Suite         | Audio Filtering
 Hexler TouchOSC              | Production Control
 
 MAJOR SOFTWARE PRODUCTS (Open Source)
