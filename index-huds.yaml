@@ -23,7 +23,7 @@
 ##
 
 closingcredits:
-    canvasColor:           "#000000c0"
+    canvasColor:           "#000000e0"
     headerColor:           "#aaaaaa"
     headerFontSize:        "40px"
     headerFontWeight:      "200"

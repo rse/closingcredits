@@ -27,7 +27,7 @@ window.ClosingCredits = class ClosingCredits {
     constructor (props = {}) {
         /*  take over properties  */
         this.props = {
-            canvasColor:        "#000000c0",
+            canvasColor:        "#000000e0",
             headerColor:        "#aaaaaa",
             headerFontSize:     "40px",
             headerFontWeight:   "200",
