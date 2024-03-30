@@ -9,9 +9,8 @@ Presenters
 
 FIXME                        | Vorstandsvorsitzender
 FIXME                        | Mitglied des Vorstands
-Dr. Ralf S. Engelschall      | CTO msg group
-FIXME                        | msg Artificial Intelligence
-FIXME                        | msg Artificial Intelligence
+FIXME                        | FIXME
+FIXME                        | FIXME
 
 Studio Crew
 -----------
@@ -48,6 +47,7 @@ msg Research                 | Contact
 msg systems ag               | Company
 Robert-Bürkle-Str. 1         | Street
 85737 Ismaning               | City
+GERMANY                      | Country
 
 Major Cloud Services
 --------------------
@@ -63,8 +63,8 @@ StudioCoast vMix             | Video Mixing
 OBS Studio                   | Video Mixing
 NewTek NDI Tools             | Video Transmission
 Topten Software Cantabile    | Audio Mixing
+VB-Audio VoiceMeeter         | Audio Mixing
 Waves Plugin Suite           | Audio Filtering
-VB-Audio VoiceMeeter         | Audio Distribution
 Hexler TouchOSC              | Production Control
 
 Major Software Products (Open Source)
