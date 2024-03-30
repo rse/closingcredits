@@ -56,8 +56,8 @@ U2D Ventari                  | Event Management, Stream Playout
 3Q SDN                       | Video Egress Service
 VDO.Ninja                    | Video Ingress Service
 
-Major Software Products
------------------------
+Major Software Products (Commercial)
+------------------------------------
 
 StudioCoast vMix             | Video Mixing
 OBS Studio                   | Video Mixing
@@ -65,8 +65,12 @@ NewTek NDI Tools             | Video Transmission
 Topten Software Cantabile    | Audio Mixing
 Waves Plugin Suite           | Audio Filtering
 VB-Audio VoiceMeeter         | Audio Distribution
-Bitfocus Companion           | Production Control
 Hexler TouchOSC              | Production Control
+
+Major Software Products (Open Source)
+-------------------------------------
+
+Bitfocus Companion           | Production Control
 Pérez QPrompt                | Teleprompter Rendering
 Engelschall vMix-VPTZ        | Camera Control
 Engelschall Studio-Canvas    | Canvas Rendering
@@ -74,24 +78,30 @@ Engelschall ClosingCredits   | Closing Credits Rendering
 Engelschall LiveCut          | Live Replay Snippet Rendering
 Engelschall HUDS             | Head-Up-Display Rendering
 
-Major Hardware Vendors
-----------------------
+Major Hardware Vendors (Stage)
+------------------------------
 
 Sennheiser                   | Wireless Audio
-PTZOptics                    | PTZ Camera Controller
 Panasonic                    | PTZ Cameras
 Birddog P400                 | PTZ Cameras, Video Conversion
-Blackmagic Design            | Video Conversion
+PTZOptics                    | PTZ Camera Controller
+Logitech                     | SPY Cameras
 Samsung                      | Televisions
-Dell                         | Monitors
-One.de                       | Personal Computers
-Elgato                       | Production Control
-Logitech                     | SPY Cameras, Keyboards, Mice
-Netgear                      | Ethernet Switches
-AVM                          | Internet Router
 GlobalTruss                  | Studio Truss
 Manfrotto                    | Studio Truss
 Swit                         | Studio Lights
+
+Major Hardware Vendors (Control)
+--------------------------------
+
+Blackmagic Design            | Video Conversion
+One.de                       | Personal Computers
+Elgato                       | Production Control
+Logitech                     | Production Control
+Dell                         | Monitors
+Synology                     | Storage
+Netgear                      | Ethernet Switches
+AVM                          | Internet Router
 
 Copyright
 ---------
