@@ -16,12 +16,12 @@ FIXME                        | msg Artificial Intelligence
 Studio Crew
 -----------
 
+Dr. Ralf S. Engelschall      | Supervisor
 Noah S. Engelschall          | Director
 Christian Reiber             | Coordinator
 Maximilian Marsch            | Prompter
-Kristina Sunjerga            | Equipper
 Matthias Brusdeylins         | Observer
-Dr. Ralf S. Engelschall      | Supervisor
+Kristina Sunjerga            | Equipper
 
 Event Crew
 ----------
