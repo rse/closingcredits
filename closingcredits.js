@@ -23,7 +23,7 @@
 */
 
 /*  the closing credits knowledge encapsulation  */
-class ClosingCredits {
+window.ClosingCredits = class ClosingCredits {
     constructor (props = {}) {
         /*  take over properties  */
         this.props = {
@@ -121,7 +121,7 @@ class ClosingCredits {
             easing:    "easeInSine",
             delay:     0,
             opacity:   [ 0.0, 1.0 ]
-        }).finished,
+        })
         anime({
             targets:   $(".canvas", el).get(0),
             duration:  2000,
@@ -130,7 +130,7 @@ class ClosingCredits {
             easing:    "easeInSine",
             delay:     0,
             opacity:   [ 0.0, 1.0 ]
-        }).finished
+        })
 
         /*  scroll text  */
         const ch = $(".canvas", el).height()
@@ -155,7 +155,7 @@ class ClosingCredits {
             easing:    "easeInSine",
             delay:     0,
             opacity:   [ 1.0, 0.0 ]
-        }).finished,
+        })
         anime({
             targets:   $(".canvas", el).get(0),
             duration:  2000,
@@ -164,7 +164,7 @@ class ClosingCredits {
             easing:    "easeInSine",
             delay:     0,
             opacity:   [ 1.0, 0.0 ]
-        }).finished
+        })
 
         /*  optionally stop sound loop  */
         if (soundid !== 0) {
