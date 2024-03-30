@@ -115,7 +115,7 @@ class ClosingCredits {
         /*  fade-in canvas (background and scroll area)  */
         anime({
             targets:   $(el).get(0),
-            duration:  3000,
+            duration:  2000,
             autoplay:  true,
             direction: "normal",
             easing:    "easeInSine",
@@ -124,7 +124,7 @@ class ClosingCredits {
         }).finished,
         anime({
             targets:   $(".canvas", el).get(0),
-            duration:  3000,
+            duration:  2000,
             autoplay:  true,
             direction: "normal",
             easing:    "easeInSine",
@@ -137,16 +137,43 @@ class ClosingCredits {
         const ch = $(".canvas", el).height()
         const vd = parseInt(this.props.pageScrollDuration)
         for (let offset = vh; offset > -ch; offset -= vh) {
+            /*  determine scroll chunk range and scroll chunk duration  */
+            const offsetEnd = Math.max(offset - vh, -ch)
+            let duration = vd
+            if (offsetEnd - offset > -ch)
+                duration = vd / vh * Math.abs(offsetEnd - offset)
+
+            /*  scroll the text one chunk  */
             await anime({
                 targets:   $(".canvas", el).get(0),
-                duration:  vd,
+                duration:  duration,
                 autoplay:  true,
                 direction: "normal",
                 easing:    "linear",
                 delay:     0,
-                top:       [ offset, offset - vh ]
+                top:       [ offset, offsetEnd ]
             }).finished
         }
+
+        /*  fade-out canvas (background and scroll area)  */
+        anime({
+            targets:   $(el).get(0),
+            duration:  2000,
+            autoplay:  true,
+            direction: "normal",
+            easing:    "easeInSine",
+            delay:     0,
+            opacity:   [ 1.0, 0.0 ]
+        }).finished,
+        anime({
+            targets:   $(".canvas", el).get(0),
+            duration:  2000,
+            autoplay:  true,
+            direction: "normal",
+            easing:    "easeInSine",
+            delay:     0,
+            opacity:   [ 1.0, 0.0 ]
+        }).finished
 
         /*  optionally stop sound loop  */
         if (soundid !== 0) {
