@@ -64,11 +64,6 @@
                 /*  initialize and start closing credits  */
                 const cc = new ClosingCredits(options)
                 cc.start(options)
-
-                /*  provide restart event  */
-                huds.bind("restart", (event, data) => {
-                    cc.restart()
-                })
             })
         </script>
     </head>

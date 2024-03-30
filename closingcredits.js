@@ -155,11 +155,5 @@ class ClosingCredits {
             })
         }
     }
-    async stop () {
-    }
-    async restart () {
-        await this.stop()
-        await this.start()
-    }
 }
 

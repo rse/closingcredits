@@ -89,14 +89,6 @@ Options
 - **pageScrollDuration**=*ms*
 - **pageTextURL**=*url*
 
-Control
--------
-
-For interactively controlling **ClosingCredits** press:
-
-- restart:<br/>
-  <kbd>r</kbd>
-
 HUDS
 ----
 
@@ -115,12 +107,6 @@ npx huds -a 0.0.0.0 -p 9999 -d closingcredits:index-huds.html,index-huds.yaml
 And then use the following URL for rending **ClosingCredits** in OBS Studio or vMix:
 
 `https://localhost:9999/closingcredits/`
-
-Finally, use the following URLs with HTTP `GET` requests for remote
-controlling **ClosingCredits** from e.g. Stream Deck, Companion,
-CentralControl or ShowCockpit:
-
-- `https://localhost:9999/analogclock/event/restart`
 
 License
 -------
