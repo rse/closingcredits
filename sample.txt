@@ -43,29 +43,30 @@ FIXME                        | Translator
 Shooting Location
 -----------------
 
-msg Filmstudio               | Location Name
-msg Research                 | Contact Unit Name
-msg systems ag               | Company Name
-Robert-Bürkle-Str. 1         | Street Address
-85737 Ismaning               | City Name
+msg Filmstudio               | Location
+msg Research                 | Contact
+msg systems ag               | Company
+Robert-Bürkle-Str. 1         | Street
+85737 Ismaning               | City
 
 Major Cloud Services
 --------------------
 
 U2D Ventari                  | Event Management, Stream Playout
-3Q SDN                       | Streaming Distribution Network
+3Q SDN                       | Video Egress Service
+VDO.Ninja                    | Video Ingress Service
 
-Major Software Components
--------------------------
+Major Software Products
+-----------------------
 
 StudioCoast vMix             | Video Mixing
+OBS Studio                   | Video Mixing
 NewTek NDI Tools             | Video Transmission
 Topten Software Cantabile    | Audio Mixing
 Waves Plugin Suite           | Audio Filtering
 VB-Audio VoiceMeeter         | Audio Distribution
 Bitfocus Companion           | Production Control
 Hexler TouchOSC              | Production Control
-Seguin VDO.Ninja             | Guest Ingesting
 Pérez QPrompt                | Teleprompter Rendering
 Engelschall vMix-VPTZ        | Camera Control
 Engelschall Studio-Canvas    | Canvas Rendering
@@ -73,25 +74,24 @@ Engelschall ClosingCredits   | Closing Credits Rendering
 Engelschall LiveCut          | Live Replay Snippet Rendering
 Engelschall HUDS             | Head-Up-Display Rendering
 
-Major Hardware Components
--------------------------
+Major Hardware Vendors
+----------------------
 
-Sennheiser EW 500 G4         | Wireless Audio
-PTZOptics Superjoy           | PTZ Camera Controller
-Panasonic AW-UE100           | PTZ Cameras
-Birddog P400                 | PTZ Cameras
-Birddog 4K Flex              | Video Conversion
-Samsung TV                   | Televisions
-Dell Monitor                 | Monitors
-One.de Gaming                | Personal Computers
-Elgato StreamDeck XL         | Production Control
-Logitech BRIO 4K             | SPY Cameras
-Logitech MX                  | Keyboards, Mice
-Netgear AV-Line              | Ethernet Switches
-AVM Fritz!box                | Internet Router
+Sennheiser                   | Wireless Audio
+PTZOptics                    | PTZ Camera Controller
+Panasonic                    | PTZ Cameras
+Birddog P400                 | PTZ Cameras, Video Conversion
+Blackmagic Design            | Video Conversion
+Samsung                      | Televisions
+Dell                         | Monitors
+One.de                       | Personal Computers
+Elgato                       | Production Control
+Logitech                     | SPY Cameras, Keyboards, Mice
+Netgear                      | Ethernet Switches
+AVM                          | Internet Router
 GlobalTruss                  | Studio Truss
-Manfrotto 035 Super Clamp    | Studio Truss
-Swit PL-E90D                 | Studio Lights
+Manfrotto                    | Studio Truss
+Swit                         | Studio Lights
 
 Copyright
 ---------
