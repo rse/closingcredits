@@ -52,7 +52,7 @@ GERMANY                      | Country
 Major Cloud Services
 --------------------
 
-U2D Ventari                  | Event Management, Stream Playout
+U2D Ventari                  | Event Management
 3Q SDN                       | Video Egress Service
 VDO.Ninja                    | Video Ingress Service
 
