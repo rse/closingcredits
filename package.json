@@ -32,8 +32,8 @@
         "eslint-plugin-import":    "2.29.1"
     },
     "optionalDependencies": {
-        "huds":                    "2.1.4",
-        "zx":                      "7.2.3"
+        "huds":                    "2.1.5",
+        "zx":                      "8.0.1"
     },
     "scripts": {
         "start":                   "huds -a 0.0.0.0 -p 9999 -d closingcredits:index-huds.html,index-huds.yaml",
