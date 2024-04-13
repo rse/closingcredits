@@ -62,7 +62,6 @@ MAJOR SOFTWARE PRODUCTS (Commercial)
 ------------------------------------
 
 StudioCoast vMix             | Video Mixing
-OBS Studio                   | Video Mixing
 NewTek NDI Tools             | Video Transmission
 Topten Software Cantabile    | Audio Mixing
 VB-Audio VoiceMeeter         | Audio Mixing
@@ -73,6 +72,7 @@ Hexler TouchOSC              | Production Control
 MAJOR SOFTWARE PRODUCTS (Open Source)
 -------------------------------------
 
+OBS Studio                   | Video Mixing
 Bitfocus Companion           | Production Control
 Pérez QPrompt                | Teleprompter Rendering
 Engelschall vMix-VPTZ        | Camera Control
