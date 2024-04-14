@@ -40,7 +40,7 @@ window.ClosingCredits = class ClosingCredits {
             rightColor:         "#dddddd",
             rightFontSize:      "40px",
             rightFontWeight:    "300",
-            lineHeight:         "40px",
+            lineHeight:         "50px",
             soundLoop:          "orchester1",
             pageScrollDuration: "10000",
             pageTextURL:        "closingcredits.txt",
