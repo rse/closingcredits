@@ -65,7 +65,7 @@ window.ClosingCredits = class ClosingCredits {
         /*  load and parse text  */
         let text = (await axios.get(this.props.pageTextURL))?.data ?? ""
         text = text
-            .replace(/\&/g, "&amp;")
+            .replace(/&/g, "&amp;")
             .replace(/</g, "&lt;")
             .replace(/>/g, "&gt;")
             .replace(/\(c\)/g, "&copy;")
