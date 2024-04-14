@@ -15,7 +15,7 @@ the video stream at the end of an event.
 Demo
 ----
 
-A centrally deployed version of **ClosingCredits** is available under
+A centrally deployed demo version of **ClosingCredits** is available under
 the URL https://rse.github.io/closingcredits/.
 
 Remote Use
@@ -85,6 +85,7 @@ Options
 - **rightColor**=*color*
 - **rightFontSize**=*size*
 - **rightFontWeight**=*weight*
+- **lineHeight**=*size*
 - **soundLoop**=*id*
 - **pageScrollDuration**=*ms*
 - **pageTextURL**=*url*
