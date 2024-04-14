@@ -29,17 +29,18 @@ window.ClosingCredits = class ClosingCredits {
         this.props = {
             canvasColor:        "#000000e0",
             headerColor:        "#aaaaaa",
-            headerFontSize:     "40px",
+            headerFontSize:     "30px",
             headerFontWeight:   "200",
             textColor:          "#ffffff",
-            textFontSize:       "40px",
+            textFontSize:       "30px",
             textFontWeight:     "400",
             leftColor:          "#ffffff",
-            leftFontSize:       "40px",
+            leftFontSize:       "30px",
             leftFontWeight:     "500",
             rightColor:         "#dddddd",
-            rightFontSize:      "40px",
+            rightFontSize:      "30px",
             rightFontWeight:    "300",
+            lineHeight:         "40px",
             soundLoop:          "orchester1",
             pageScrollDuration: "10000",
             pageTextURL:        "closingcredits.txt",
@@ -56,6 +57,7 @@ window.ClosingCredits = class ClosingCredits {
         `)
         $(el)
             .css("background-color", this.props.canvasColor)
+            .css("line-height", this.props.lineHeight)
 
         /*  inject DOM fragment into DOM tree  */
         $("body").append(el)
