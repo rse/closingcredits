@@ -1,7 +1,7 @@
 {
     "name":                        "@rse/closingcredits",
     "publishConfig":               { "access": "public" },
-    "version":                     "1.0.1",
+    "version":                     "1.0.2",
     "description":                 "Closing Credits for OBS Studio or vMix",
     "browser":                     "index.html",
     "keywords":                    [ "closing", "end", "final", "credits", "obs", "studio", "vmix" ],
