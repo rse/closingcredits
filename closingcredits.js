@@ -138,6 +138,9 @@ window.ClosingCredits = class ClosingCredits {
             opacity:   [ 0.0, 1.0 ]
         })
 
+        /*  give DOM time to determine size of canvas  */
+        await new Promise((resolve) => setTimeout(resolve, 1000))
+
         /*  scroll text  */
         const ch = $(".canvas", el).height()
         const vh = $(el).height()
