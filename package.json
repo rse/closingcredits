@@ -22,7 +22,7 @@
         "axios":                   "1.6.8",
         "animejs":                 "3.2.2",
         "mousetrap":               "1.6.5",
-        "typopro-web":             "4.2.6",
+        "typopro-web":             "4.2.7",
         "howler":                  "2.2.4",
         "@rse/soundlp":            "1.1.1"
     },
@@ -33,7 +33,7 @@
     },
     "optionalDependencies": {
         "huds":                    "2.1.5",
-        "zx":                      "8.0.1"
+        "zx":                      "8.0.2"
     },
     "scripts": {
         "start":                   "huds -a 0.0.0.0 -p 9999 -d closingcredits:index-huds.html,index-huds.yaml",
