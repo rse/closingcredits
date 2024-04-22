@@ -18,29 +18,26 @@ Demo
 A centrally deployed demo version of **ClosingCredits** is available under
 the URL https://rse.github.io/closingcredits/.
 
-Remote Use
-----------
+Development Use
+---------------
 
-1. Add your *Browser Source* source to *OBS Studio*:
+1. Install [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/).
 
-   - Local File: **(disabled)**
-   - URL: `https://rse.github.io/closingcredits/?`*options*
-   - Width: **1920** (or whatever is your stream resolution width)
-   - Height: **1080** (or whatever is your stream resolution height)
-   - Use custom frame rate: **(disabled)**
-   - Control audio via OBS: **(disabled)**
-   - Custom CSS: **(empty)**
-   - Shutdown source when not visible: **(enabled)**
-   - Refresh browser when scene becomes active: **(enabled)**
+2. Clone the **ClosingCredits** sources:<br/>
+   `git clone --depth 1 https://github.com/rse/closingcredits`<br/>
+   `cd closingcredits`<br/>
 
-   Or add your *Web Browser* input to *vMix*:
+3. Download all dependencies:<br/>
+   `$ npm install`
 
-   - URL: `https://rse.github.io/closingcredits/?`*options*
-   - Width: **1920** (or whatever is your stream resolution width)
-   - Height: **1080** (or whatever is your stream resolution height)
+4. Start a local HTTP service (via HUDS):<br/>
+   `$ npm start`
 
-Local Use
----------
+5. Open the following URL:<br/>
+   http://127.0.0.1:9999/closingcredits/
+
+Production Use
+--------------
 
 1. Install [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/).
 
